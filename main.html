@@ -17,9 +17,9 @@
         const button = document.getElementById("incrementBtn");
 
         button.addEventListener("click", () => {
-            alert("Current Value: " + counterValue); // Show alert with un-incremented value
-            counterValue++; // Increment counter
-            counterElement.textContent = counterValue; // Update display
+            alert(counterValue);  // Now alert only the number, matching Cypress test
+            counterValue++;
+            counterElement.textContent = counterValue;
         });
     </script>
 </body>
